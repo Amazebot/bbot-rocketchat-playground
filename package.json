@@ -1,0 +1,35 @@
+{
+  "name": "bbot-faldo",
+  "version": "0.0.5",
+  "description": "Faldo gets you started prototyping bots for Rocket.Chat",
+  "main": "index.js",
+  "license": "MIT",
+  "contributors": [
+    "Sing Li <sing.li@rocket.chat>",
+    "Tim Kinnane <tim.kinnane@amazebot.chat>"
+  ],
+  "standard": {
+    "env": [
+      "mocha"
+    ]
+  },
+  "dependencies": {
+    "bbot": "^0.3.0",
+    "email-addresses": "^3.0.1",
+    "generate-password": "^1.4.0",
+    "random-words": "^1.1.0",
+    "turbproxy": "^0.0.2",
+    "glitchmagic": "^0.0.1"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "standard": "^11.0.1"
+  },
+  "scripts": {
+    "debug": "node --inspect --inspect-brk index.js",
+    "local": "node index.js",
+    "start": "node index.js -m rocketchat",
+    "test": "mocha ./*.spec.js"
+  }
+}
