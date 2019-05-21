@@ -7,16 +7,16 @@ const path = (b) => scene.path(b.message.user.id)
 
 // Keep patterns separated for cleaner conversation logic
 const patterns = {
-  welcome: /^\b(hi|hello|hey)\b$/i,
+  welcome: /\b(hi|hello|hey)\b$/i,
   email: /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/,
-  frameworks: /^\b(bbot|botkit|botpress|hubot|rasa|none)\b$/i, 
-  username: /^(\w*)$/i,
-  password: /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/,
-  set: /^set$/i,
-  skip: /^skip$/i,
-  confirm: /^confirm$/i,
-  start: /^(start|new|begin)$/i,
-  exit: /^\b(quit|exit|cancel)\b$/i,
+  frameworks: /\b(bbot|botkit|botpress|hubot|rasa|none)\b$/i, 
+  username: /(\w*)$/i,
+  password: /(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/,
+  set: /set$/i,
+  skip: /skip$/i,
+  confirm: /confirm$/i,
+  start: /(start|new|begin)$/i,
+  exit: /\b(quit|exit|cancel)\b$/i,
 }
 
 /**

@@ -17,13 +17,14 @@
     "bbot": "^0.3.0",
     "email-addresses": "^3.0.1",
     "generate-password": "^1.4.0",
+    "glitchmagic": "^0.0.1",
     "random-words": "^1.1.0",
-    "turbproxy": "^0.0.2",
-    "glitchmagic": "^0.0.1"
+    "turbproxy": "^0.0.2"
   },
   "devDependencies": {
     "chai": "^4.1.2",
     "mocha": "^5.2.0",
+    "nodemon": "^1.18.3",
     "standard": "^11.0.1"
   },
   "scripts": {
